@@ -1,8 +1,10 @@
+#if UNITY_EDITOR
+
 using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-public class AudioResourceManager : EditorWindow
+public class AudioResourceManagerWindow : EditorWindow
 {
     private const string WINDOW_TITLE = "Audio Resource Manager";
     private const string MENU_ITEM_PATH = "Tools/Audio Resource Manager %#F1";
@@ -134,3 +136,5 @@ public class AudioResourceManager : EditorWindow
         }
     }
 }
+
+#endif
