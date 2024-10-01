@@ -22,7 +22,7 @@ public class AudioResourceManagerWindow : EditorWindow
     [MenuItem(MENU_ITEM_PATH, false, 100000)]
     public static void ShowWindow()
     {
-        GetWindow<AudioResourceManager>(WINDOW_TITLE);
+        GetWindow<AudioResourceManagerWindow>(WINDOW_TITLE);
     }
 
     private void OnGUI()
