@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+
+using UnityEngine;
 using UnityEditor;
 
 [CanEditMultipleObjects]
@@ -139,3 +141,5 @@ public class TransformResetEditor : Editor
         return axes;
     }
 }
+
+#endif
