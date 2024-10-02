@@ -11,5 +11,9 @@
     - Unity 메뉴에서 `Edit > Project Settings > Player`로 이동한 후, **Api Compatibility Level**을 **.NET Standard**가 아닌 **.NET Framework**로 변경해야 합니다.
 
 ## 사용 방법
-1. `System.Windows.Forms.dll`을 Unity 프로젝트에 추가합니다.
-2. `Player Settings`에서 Api Compatibility Level을 `.NET Framework`로 변경합니다.
+`WindowMessageUtility.Show(string title, string message, string iconPath = null)` 메서드를 호출하여 원하는 제목과 메시지를 가진 알림을 표시할 수 있습니다.
+
+```csharp
+WindowMessageUtility.Show("제목", "메시지 내용");
+WindowMessageUtility.Show("제목", "메시지 내용", ico파일);
+```
